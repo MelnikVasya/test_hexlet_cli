@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'test_hexlet_cli'
+require 'optparse'
+
+cli = TestHexletCli::Base.new
+
+p cli.run
