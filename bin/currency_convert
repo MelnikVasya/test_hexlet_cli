@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'test_hexlet_cli'
+
+convertor = TestHexletCli::Currency.new
+
+amount = ARGV[0].to_f
+from_currency = ARGV[1]
+to_currency = ARGV[2]
+
+result = convertor.convert(amount, from_currency, to_currency)
+
+puts "#{amount} #{from_currency} = #{result} #{to_currency}"
