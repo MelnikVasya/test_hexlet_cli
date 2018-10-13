@@ -4,6 +4,7 @@ require 'json'
 module TestHexletCli
   class Currency
     EXCANGE_SERVICE_URL = 'https://api.exchangeratesapi.io/latest'
+
     attr_accessor :http_client
 
     def initialize(http_client = Net::HTTP)
